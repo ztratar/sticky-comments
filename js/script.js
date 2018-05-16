@@ -2,9 +2,9 @@ $(function(){
 
 	window.visiblePortion = 0;
 
-	$(window).scroll(function(){
+	$(window).scroll(_.throttle(function(){
 		window.positionDiscussions();
-	});
+	}, 23));
 
 	window.allowPositionDiscussions = function() {
 		window.positionDiscussionsAllowed = true;
@@ -72,7 +72,7 @@ $(function(){
 				}
 			}
 		},
-		
+
 		defaults: function() {
 			return {
 				id: null,
