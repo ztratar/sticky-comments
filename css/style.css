@@ -1,0 +1,174 @@
+/* Main document stylesheet */
+
+html {
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	background: #FCFCFD;
+	color: #000;
+	font: 14px/1 "Helvetica Neue", Helvetica, sans-serif;
+	min-height: 100%;
+	height: auto;
+	width: 100%;
+	text-rendering: optimizeLegibility;
+}
+
+div.siteWrap {
+	margin: 0px auto 0;
+	width: 640px;
+}
+
+div.postWrap {
+	padding: 10px 0;
+	margin: 0 0 10px 0;
+	background: white;
+	border-bottom: 1px solid #eee;
+}
+
+div.discussionWrap {
+	margin: 0;
+}
+
+ul.discussionContainer {
+	width: 640px;
+	margin: 0;
+	overflow: hidden;
+	position: relative;
+}
+
+ul.discussionContainer li {
+	width: 640px;
+	float: left;
+}
+
+ul.discussionContainer li div.dItemWrap {
+	padding: 3px 0 3px 0;
+	background: #FCFCFD;
+	float: left;
+	width: 640px;
+}
+
+	ul.discussionContainer li div.dItemWrap.fixedPos {
+		position: fixed;
+		padding-top: 0px;
+	}
+	ul.discussionContainer li div.dItemWrap.fixedPos div.dItem {
+		border-top: none;
+		border-top-left-radius: 0px;
+		border-top-right-radius: 0px;
+	}
+		ul.discussionContainer li div.dItemWrap.fixedPos div.dItem:hover {
+			background: #fcfcff;
+			cursor: pointer;
+		}
+			ul.discussionContainer li div.dItemWrap.fixedPos div.dItem p {
+				pointer-events: none;
+			}
+	ul.discussionContainer li div.dItemWrap.fixedPos div.dItemContent {
+		padding-bottom: 10px;
+	}
+	ul.discussionContainer li div.dItemWrap.fixedPos div.dItemStyleBar {
+		display: none;
+	}
+	ul.discussionContainer li div.dItemWrap.fixedPos div.dItemActionBar {
+		display: none;
+	}
+	ul.discussionContainer li.l0 div.dItemWrap.fixedPos { z-index: 100; }
+	ul.discussionContainer li.l1 div.dItemWrap.fixedPos { z-index: 98; }
+	ul.discussionContainer li.l2 div.dItemWrap.fixedPos { z-index: 96; }
+	ul.discussionContainer li.l3 div.dItemWrap.fixedPos { z-index: 94; }
+	ul.discussionContainer li.l4 div.dItemWrap.fixedPos { z-index: 92; }
+	ul.discussionContainer li.l5 div.dItemWrap.fixedPos { z-index: 90; }
+	ul.discussionContainer li.l6 div.dItemWrap.fixedPos { z-index: 88; }
+	ul.discussionContainer li.l7 div.dItemWrap.fixedPos { z-index: 86; }
+	ul.discussionContainer li.l8 div.dItemWrap.fixedPos { z-index: 84; }
+	ul.discussionContainer li.l9 div.dItemWrap.fixedPos { z-index: 82; }
+
+
+ul.discussionContainer li div.dItem {
+	background: white;
+	border: 1px solid #E4E8F1;
+	border-radius: 3px;
+	border-bottom: 1px solid #D7DDEA;
+	padding: 2px 2px 2px 2px;
+	width: 601px;
+	float: right;
+	position: relative;
+	line-height: 1.1;
+}
+
+	ul.discussionContainer li.l0 div.dItemWrap {  }
+	ul.discussionContainer li.l1 div.dItem { width: 566px; }
+	ul.discussionContainer li.l2 div.dItem { width: 531px; }
+	ul.discussionContainer li.l3 div.dItem { width: 496px; }
+	ul.discussionContainer li.l4 div.dItem { width: 461px; }
+	ul.discussionContainer li.l5 div.dItem { width: 426px; }
+	ul.discussionContainer li.l6 div.dItem { width: 391px; }
+	ul.discussionContainer li.l7 div.dItem { width: 356px; }
+	ul.discussionContainer li.l8 div.dItem { width: 321px; }
+
+ul.discussionContainer li div.dItemStyleBar {
+	position: absolute;
+	top: -1px;
+	left: -34px;
+	background: #f8f8f9;
+	width: 25px;
+	border: 1px solid #e6e8eb;
+	border-radius: 5px;
+}
+
+	ul.discussionContainer li div.dItemStyleBar a {
+		float: left;
+		text-align: center;
+		width: 25px;
+		height: 23px;
+		text-decoration: none;
+		color: #666;
+		text-indent: -9999px;
+		overflow: hidden;
+	}
+
+	ul.discussionContainer li div.dItemStyleBar a.upVote:hover,
+	ul.discussionContainer li div.dItemStyleBar a.downVote:hover {
+		background-color: #fcfcff;
+	}
+
+		ul.discussionContainer li div.dItemStyleBar a.upVote {
+			background: url('../images/votes.png') 7px 5px no-repeat;
+			border-bottom: 1px solid #e9ebee;
+		}
+
+		ul.discussionContainer li div.dItemStyleBar a.downVote {
+			background: url('../images/votes.png') 7px -19px no-repeat;
+			border-top: 1px solid #fff;
+		}
+
+ul.discussionContainer li div.dItemContent {
+	padding: 10px 14px 5px;
+}
+
+ul.discussionContainer li div.dItemActionBar {
+	padding: 4px 14px;
+	font-size: 11px;
+	color: #777;
+	background: #F8F8F8;
+	margin: 5px 1px 2px;
+}
+
+	ul.discussionContainer li div.dItemActionBar a {
+		font-weight: bold;
+		text-decoration: none;
+		color: #777;
+	}
+
+		ul.discussionContainer li div.dItemActionBar a:hover {
+			text-decoration: underline;
+			color: #666;
+		}
+
+	ul.discussionContainer li div.dItemActionBar span {
+		font-size: 7px;
+		color: #bbb;
+		margin: 0 4px 0;
+	}
